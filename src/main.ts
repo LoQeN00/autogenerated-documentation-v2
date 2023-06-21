@@ -13,10 +13,7 @@ async function bootstrap() {
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
-  fs.writeFileSync(
-    './postman/schemas/documentation.json',
-    JSON.stringify(document),
-  );
+  fs.writeFileSync('./documentation.json', JSON.stringify(document));
   SwaggerModule.setup('api', app, document);
   await app.listen(3000);
 }
