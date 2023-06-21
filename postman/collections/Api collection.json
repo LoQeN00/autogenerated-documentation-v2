@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "b6ae6799-384e-4e98-bf1b-2da1ede69d9e",
+		"name": "Api collection",
+		"description": "The cats API description",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "10842227-b6ae6799-384e-4e98-bf1b-2da1ede69d9e"
+	},
+	"item": [
+		{
+			"name": "/",
+			"item": [
+				{
+					"name": "Hello World",
+					"id": "e1b86da0-2662-4495-87d3-82978a37e366",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								""
+							]
+						},
+						"description": "Hello World endpoint"
+					},
+					"response": [
+						{
+							"id": "bfdd690d-62b0-47af-830a-500f631760d1",
+							"name": "The found record",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "<string>"
+						}
+					]
+				}
+			],
+			"id": "2efd7a52-640a-418d-a215-e1a3157ea192"
+		}
+	],
+	"variable": [
+		{
+			"id": "e6967d5d-d5d0-4d4b-ad6f-d0b39795787f",
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}
