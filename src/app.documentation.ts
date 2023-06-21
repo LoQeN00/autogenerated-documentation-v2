@@ -37,3 +37,17 @@ export const AppHelloWorlApi = () => {
     }),
   );
 };
+
+export const TestApi = () => {
+  return applyDecorators(
+    ApiOperationBase({
+      summary: 'Test',
+      descriptionText: 'Test endpoint',
+    }),
+    ApiOkResponse({
+      status: 200,
+      description: 'The found record',
+      type: String,
+    }),
+  );
+};
