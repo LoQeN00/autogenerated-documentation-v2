@@ -12,7 +12,7 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @Get()
+  @Get('/test')
   @TestApi()
   getASD(): string {
     return 'test';
