@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
-import { AppHelloWorlApi, UsersApi } from './app.documentation';
+import { AppHelloWorlApi, TestApi, UsersApi } from './app.documentation';
 
 @Controller()
 export class AppController {
@@ -12,9 +12,15 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @Get()
+  @Get('/users')
   @UsersApi()
   getUsers() {
     return 'users';
+  }
+
+  @Get('/test')
+  @TestApi()
+  getTest() {
+    return 'test';
   }
 }

@@ -51,3 +51,17 @@ export const UsersApi = () => {
     }),
   );
 };
+
+export const TestApi = () => {
+  return applyDecorators(
+    ApiOperationBase({
+      summary: 'Test',
+      descriptionText: 'test',
+    }),
+    ApiOkResponse({
+      status: 200,
+      description: 'test',
+      type: String,
+    }),
+  );
+};
