@@ -37,31 +37,3 @@ export const AppHelloWorlApi = () => {
     }),
   );
 };
-
-export const TestApi = () => {
-  return applyDecorators(
-    ApiOperationBase({
-      summary: 'Test',
-      descriptionText: 'Test endpoint',
-    }),
-    ApiOkResponse({
-      status: 200,
-      description: 'The found record',
-      type: String,
-    }),
-  );
-};
-
-export const UsersApi = () => {
-  return applyDecorators(
-    ApiOperationBase({
-      summary: 'Get Users',
-      descriptionText: 'Endpoint for getting all users',
-    }),
-    ApiOkResponse({
-      status: 200,
-      description: 'Found users',
-      type: String,
-    }),
-  );
-};
