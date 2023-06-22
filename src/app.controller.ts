@@ -17,4 +17,10 @@ export class AppController {
   getASD(): string {
     return 'test';
   }
+
+  @Get('/users')
+  @TestApi()
+  getTest(): string {
+    return 'test';
+  }
 }
