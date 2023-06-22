@@ -28,7 +28,7 @@ export const AppHelloWorlApi = () => {
   return applyDecorators(
     ApiOperationBase({
       summary: 'Hello World',
-      descriptionText: 'Hello World endpoint',
+      descriptionText: 'Hello World endpoint description',
     }),
     ApiOkResponse({
       status: 200,
