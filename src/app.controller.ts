@@ -19,4 +19,10 @@ export class AppController {
   getApp() {
     return 'app';
   }
+
+  @Get('/test/hello-world')
+  @AppHelloWorlApi()
+  getHelloWorld() {
+    return 'hello world';
+  }
 }
