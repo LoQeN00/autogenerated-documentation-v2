@@ -9,6 +9,7 @@ import {
   ApiUnauthorizedResponse,
   ApiOperation,
   ApiResponse,
+  ApiBody,
 } from '@nestjs/swagger';
 
 export const ApiOperationBase = ({
@@ -101,6 +102,43 @@ export const TestApi = () => {
       status: 200,
       description: 'test',
       type: String,
+    }),
+  );
+};
+
+export const UpdateUserApi = () => {
+  return applyDecorators(
+    ApiOperationBase({
+      summary: 'Update User',
+      descriptionText: 'Endpoint for updating a user',
+    }),
+    ApiBody({
+      type: UserDto,
+      examples: {
+        user: {
+          value: {
+            name: 'John Doe',
+            age: 30,
+            email: 'asd@o2.pl',
+            password: '123',
+            address: 'Warsaw',
+          },
+        },
+      },
+    }),
+    ApiOkResponse({
+      status: 200,
+      description: 'The updated user',
+      type: UserDto,
+    }),
+    ApiNotFoundResponse({
+      status: 404,
+      description: 'User not found',
+    }),
+    ApiParam({
+      name: 'id',
+      type: 'number',
+      description: 'Id of the user',
     }),
   );
 };

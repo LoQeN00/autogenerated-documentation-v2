@@ -1,5 +1,5 @@
 import { UserDto } from './dtos/create-user.dto';
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Get, Post, Put } from '@nestjs/common';
 import { AppService } from './app.service';
 import { GetUserByIdApi, UsersApi } from './app.documentation';
 import { ApiTags } from '@nestjs/swagger';
@@ -30,5 +30,10 @@ export class UsersController {
     };
 
     return newUser;
+  }
+
+  @Put('/users/:id')
+  updateUser() {
+    return 'user';
   }
 }
