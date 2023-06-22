@@ -1,16 +1,16 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
-import { AppHelloWorlApi, TestApi, UsersApi } from './app.documentation';
+import { UsersApi } from './app.documentation';
 import { ApiTags } from '@nestjs/swagger';
 
-@ApiTags('App')
+@ApiTags('Users')
 @Controller()
-export class AppController {
+export class UsersController {
   constructor(private readonly appService: AppService) {}
 
-  @Get('/test')
-  @TestApi()
-  getTest() {
-    return 'test';
+  @Get('/users')
+  @UsersApi()
+  getUsers() {
+    return 'users';
   }
 }
