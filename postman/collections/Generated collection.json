@@ -601,7 +601,29 @@
 					]
 				}
 			],
-			"id": "e74d5ad5-5e82-430f-b912-f34504f2403d"
+			"id": "e74d5ad5-5e82-430f-b912-f34504f2403d",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "0432040e-4d74-47eb-9683-30225371b943",
+						"type": "text/javascript",
+						"exec": [
+							"pm.environment.get(\"variable_key\");"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "47c5f89e-5183-4220-a413-04aec4cd0415",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
 		}
 	],
 	"variable": [
