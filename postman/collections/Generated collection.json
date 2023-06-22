@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "8a4465b3-ea99-45d8-9eba-f609ca3212f7",
+		"_postman_id": "dd17093a-2102-480c-b05d-079d8e1a72f7",
 		"name": "Generated collection",
 		"description": "The cats API description",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "10842227-8a4465b3-ea99-45d8-9eba-f609ca3212f7"
+		"_uid": "10842227-dd17093a-2102-480c-b05d-079d8e1a72f7"
 	},
 	"item": [
 		{
@@ -12,7 +12,7 @@
 			"item": [
 				{
 					"name": "Test",
-					"id": "9265d37b-eb12-4eb5-a599-9402dd38a360",
+					"id": "8a8d1a11-78a3-4140-9f68-8d287c7a5822",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -37,7 +37,7 @@
 					},
 					"response": [
 						{
-							"id": "3a61403a-259f-4026-80b1-17f32858436e",
+							"id": "a92dba2e-d685-40a6-b6a7-c81a65fa3f69",
 							"name": "test",
 							"originalRequest": {
 								"method": "GET",
@@ -73,7 +73,7 @@
 				},
 				{
 					"name": "Test",
-					"id": "1856f094-df36-40bb-8bf3-414cc0321829",
+					"id": "04e02e85-9397-4b35-b998-fa4f52cb40c0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -99,7 +99,7 @@
 					},
 					"response": [
 						{
-							"id": "9090a82b-94df-43b7-8f5a-5d3c30e7c94b",
+							"id": "a5c659e5-911c-48d0-b820-f7d8cebc87de",
 							"name": "test",
 							"originalRequest": {
 								"method": "GET",
@@ -133,16 +133,79 @@
 							"body": "<string>"
 						}
 					]
+				},
+				{
+					"name": "Hello World",
+					"id": "ef41f77d-c725-401e-aa6b-ed56d66d36b9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/test/hello-world",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"test",
+								"hello-world"
+							]
+						},
+						"description": "Hello World endpoint description asd"
+					},
+					"response": [
+						{
+							"id": "3f752de2-b89f-42bd-b1c2-0d0ac02e2fe4",
+							"name": "The found record TEST TEST",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/test/hello-world",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"test",
+										"hello-world"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "<string>"
+						}
+					]
 				}
 			],
-			"id": "29fe7b27-f085-4739-a636-f1aa17e42f71"
+			"id": "e3e7c231-1600-408d-ae8a-c64d67c8239d"
 		},
 		{
 			"name": "Users",
 			"item": [
 				{
 					"name": "Get Users",
-					"id": "df9a31e1-944f-4ff6-a265-9d58dcd2eb4f",
+					"id": "efacb2aa-6fe0-4ee5-b6b9-a42f5a0c5b96",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -167,7 +230,7 @@
 					},
 					"response": [
 						{
-							"id": "f8eabe24-5255-4c86-8917-dd917c60724d",
+							"id": "c02b55a2-fd6c-4d3e-b60a-a1f386372a55",
 							"name": "All users",
 							"originalRequest": {
 								"method": "GET",
@@ -203,7 +266,7 @@
 				},
 				{
 					"name": "Create User",
-					"id": "ec594df9-780c-4440-bab0-35ecb9715423",
+					"id": "c2224b72-c6e0-4a3f-9fce-a0b7a3dde58c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -242,7 +305,7 @@
 					},
 					"response": [
 						{
-							"id": "b748fc87-8cde-4ab2-8e2f-abef76623d30",
+							"id": "e2469aeb-c446-43b4-a45f-50d5f7a73789",
 							"name": "The created user",
 							"originalRequest": {
 								"method": "POST",
@@ -292,7 +355,7 @@
 				},
 				{
 					"name": "Get User By Id",
-					"id": "3b323312-4850-4ff5-b186-cb6948acaa53",
+					"id": "fdaa5c07-9f5e-4670-96ca-cc693cac6616",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -324,7 +387,7 @@
 					},
 					"response": [
 						{
-							"id": "d47ec685-564b-4dbd-ac19-04bed231b0fd",
+							"id": "eef9be7b-3070-4365-8629-27bb0369a574",
 							"name": "The found user",
 							"originalRequest": {
 								"method": "GET",
@@ -363,7 +426,7 @@
 							"body": "{\n  \"name\": \"<string>\",\n  \"age\": \"<number>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"address\": \"<string>\"\n}"
 						},
 						{
-							"id": "287ef540-34cd-468f-812f-90228676bc48",
+							"id": "7817c0d3-714a-4619-aea9-34f9759dc1eb",
 							"name": "User not found",
 							"originalRequest": {
 								"method": "GET",
@@ -394,7 +457,7 @@
 				},
 				{
 					"name": "Update User",
-					"id": "13b48ccc-811e-428d-a970-343684bacba7",
+					"id": "7915a783-0a74-46ba-9d29-1089cf1176eb",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -440,7 +503,7 @@
 					},
 					"response": [
 						{
-							"id": "a410138d-f2d2-4e93-8802-3016ed3652b2",
+							"id": "06e4f860-f3a6-4f6a-bf87-49046d86bfe1",
 							"name": "The updated user",
 							"originalRequest": {
 								"method": "PUT",
@@ -493,7 +556,7 @@
 							"body": "{\n  \"name\": \"<string>\",\n  \"age\": \"<number>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"address\": \"<string>\"\n}"
 						},
 						{
-							"id": "febac45c-cc30-42f3-9fd6-c975137eb55e",
+							"id": "f189fa5a-2452-4847-9f80-b7a9e915df6f",
 							"name": "User not found",
 							"originalRequest": {
 								"method": "PUT",
@@ -538,78 +601,14 @@
 					]
 				}
 			],
-			"id": "08669664-fe18-4fac-aa8c-371e63706f8a"
-		},
-		{
-			"name": "Hello World",
-			"id": "8b9c1fb0-9b44-41a6-af05-ae355984c286",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json"
-					}
-				],
-				"url": {
-					"raw": "{{baseUrl}}/test/hello-world",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"test",
-						"hello-world"
-					]
-				},
-				"description": "Hello World endpoint description asd"
-			},
-			"response": [
-				{
-					"id": "431e650e-10fa-4110-83b4-18e3314273d4",
-					"name": "The found record TEST TEST",
-					"originalRequest": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{baseUrl}}/test/hello-world",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"test",
-								"hello-world"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "Text",
-					"header": [
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						}
-					],
-					"cookie": [],
-					"body": "<string>"
-				}
-			]
+			"id": "e74d5ad5-5e82-430f-b912-f34504f2403d"
 		}
 	],
 	"variable": [
 		{
-			"id": "21f7a5a1-1516-46ff-bae9-a74278a7001f",
+			"id": "a8c71058-94f4-4d77-9a2a-c4d74911618e",
 			"key": "baseUrl",
-			"value": "/",
-			"type": "string"
+			"value": "/"
 		}
 	]
 }
