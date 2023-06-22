@@ -54,6 +54,29 @@ export const UsersApi = () => {
   );
 };
 
+export const GetUserByIdApi = () => {
+  return applyDecorators(
+    ApiOperationBase({
+      summary: 'Get User By Id',
+      descriptionText: 'Endpoint for getting a user by id',
+    }),
+    ApiOkResponse({
+      status: 200,
+      description: 'The found user',
+      type: UserDto,
+    }),
+    ApiNotFoundResponse({
+      status: 404,
+      description: 'User not found',
+    }),
+    ApiParam({
+      name: 'id',
+      type: 'number',
+      description: 'Id of the user',
+    }),
+  );
+};
+
 export const CreateUserApi = () => {
   return applyDecorators(
     ApiOperationBase({

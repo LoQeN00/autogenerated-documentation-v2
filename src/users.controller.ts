@@ -1,7 +1,7 @@
 import { UserDto } from './dtos/create-user.dto';
 import { Body, Controller, Get, Post } from '@nestjs/common';
 import { AppService } from './app.service';
-import { UsersApi } from './app.documentation';
+import { GetUserByIdApi, UsersApi } from './app.documentation';
 import { ApiTags } from '@nestjs/swagger';
 
 @ApiTags('Users')
@@ -13,6 +13,12 @@ export class UsersController {
   @UsersApi()
   getUsers() {
     return 'users';
+  }
+
+  @Get('/users/:id')
+  @GetUserByIdApi()
+  getUser() {
+    return 'user';
   }
 
   @Post('/users')
