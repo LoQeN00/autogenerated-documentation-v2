@@ -11,7 +11,7 @@
 			"name": "/",
 			"item": [
 				{
-					"name": "Hello World",
+					"name": "Get Users",
 					"id": "858af310-b3d6-4e7d-b54f-64b44e276fb8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -73,6 +73,11 @@
 				}
 			],
 			"id": "505552dd-aad2-4945-ae43-b527590f522b"
+		},
+		{
+			"name": "Test",
+			"item": [],
+			"id": "3f2801dc-f911-440d-9665-091a623e29f9"
 		}
 	],
 	"variable": [
