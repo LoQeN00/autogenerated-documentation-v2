@@ -13,4 +13,10 @@ export class AppController {
   getTest() {
     return 'test';
   }
+
+  @Get('/test/app')
+  @TestApi()
+  getApp() {
+    return 'app';
+  }
 }

@@ -1,3 +1,4 @@
+import { UserDto } from './dtos/create-user.dto';
 import { applyDecorators } from '@nestjs/common';
 import {
   ApiBearerAuth,
@@ -7,6 +8,7 @@ import {
   ApiProperty,
   ApiUnauthorizedResponse,
   ApiOperation,
+  ApiResponse,
 } from '@nestjs/swagger';
 
 export const ApiOperationBase = ({
@@ -48,6 +50,20 @@ export const UsersApi = () => {
       status: 200,
       description: 'All users',
       type: String,
+    }),
+  );
+};
+
+export const CreateUserApi = () => {
+  return applyDecorators(
+    ApiOperationBase({
+      summary: 'Create User',
+      descriptionText: 'Endpoint for creating a user',
+    }),
+    ApiOkResponse({
+      status: 200,
+      description: 'The created user',
+      type: UserDto,
     }),
   );
 };
