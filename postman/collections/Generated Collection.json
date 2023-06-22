@@ -8,73 +8,6 @@
 	},
 	"item": [
 		{
-			"name": "test",
-			"item": [
-				{
-					"name": "Test",
-					"id": "1ecd7093-4816-4af1-9057-368aba44e37b",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{baseUrl}}/test",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"test"
-							]
-						},
-						"description": "Test endpoint"
-					},
-					"response": [
-						{
-							"id": "d28df862-4db1-4154-b5f5-d4b90238b2a2",
-							"name": "The found record",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Accept",
-										"value": "application/json"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/test",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"test"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "<string>"
-						}
-					]
-				}
-			],
-			"id": "a047b995-9920-413d-8f32-d3de9da3aea4"
-		},
-		{
 			"name": "/",
 			"item": [
 				{
@@ -146,7 +79,8 @@
 		{
 			"id": "a20a4f53-0723-4d21-aa7c-df126d945d0b",
 			"key": "baseUrl",
-			"value": "/"
+			"value": "/",
+			"type": "string"
 		}
 	]
 }
