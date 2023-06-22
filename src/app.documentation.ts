@@ -32,7 +32,7 @@ export const AppHelloWorlApi = () => {
     }),
     ApiOkResponse({
       status: 200,
-      description: 'The found record',
+      description: 'The found record TEST TEST',
       type: String,
     }),
   );
