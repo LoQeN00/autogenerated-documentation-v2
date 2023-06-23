@@ -142,3 +142,25 @@ export const UpdateUserApi = () => {
     }),
   );
 };
+
+export const DeleteUserApi = () => {
+  return applyDecorators(
+    ApiOperationBase({
+      summary: 'Delete User',
+      descriptionText: 'Endpoint for delete a user',
+    }),
+    ApiOkResponse({
+      status: 200,
+      description: 'Ok',
+    }),
+    ApiNotFoundResponse({
+      status: 404,
+      description: 'User not found',
+    }),
+    ApiParam({
+      name: 'id',
+      type: 'number',
+      description: 'Id of the user',
+    }),
+  );
+};

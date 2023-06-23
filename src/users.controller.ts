@@ -1,8 +1,17 @@
 import { UserDto } from './dtos/create-user.dto';
-import { Body, Controller, Get, Param, Post, Put } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  Post,
+  Put,
+} from '@nestjs/common';
 import { AppService } from './app.service';
 import {
   CreateUserApi,
+  DeleteUserApi,
   GetUserByIdApi,
   UpdateUserApi,
   UsersApi,
@@ -40,6 +49,12 @@ export class UsersController {
   @Put('/users/:id')
   @UpdateUserApi()
   updateUser(@Param('id') id: string, @Body() userDto: UserDto) {
+    return 'user';
+  }
+
+  @Delete('/users/:id')
+  @DeleteUserApi()
+  deleteUser(@Param('id') id: string) {
     return 'user';
   }
 }
