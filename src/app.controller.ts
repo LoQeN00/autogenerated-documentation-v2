@@ -25,4 +25,10 @@ export class AppController {
   getHelloWorld() {
     return 'hello world';
   }
+
+  @Get('/test/users')
+  @AppHelloWorlApi()
+  getUsers() {
+    return 'users';
+  }
 }
